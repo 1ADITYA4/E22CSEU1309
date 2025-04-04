@@ -1,0 +1,73 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: #ffffff;
+  background-color: #121212;
+
+  --batman-yellow: #FFD700;
+  --batman-dark: #1A1A1A;
+  --batman-gray: #2D2D2D;
+  --batman-light: #E5E5E5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--batman-yellow);
+  text-decoration: inherit;
+}
+a:hover {
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--batman-dark);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid var(--batman-yellow);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--batman-gray);
+  color: var(--batman-yellow);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+button:hover {
+  background-color: var(--batman-yellow);
+  color: var(--batman-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.MuiCard-root {
+  transition: transform 0.2s ease-in-out;
+  background-color: var(--batman-gray) !important;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}

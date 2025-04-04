@@ -1,0 +1,63 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #121212; /* Dark Gotham background */
+  color: #f8c42d; /* Batman yellow */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms, transform 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #f8c42d); /* Yellow glow */
+  transform: scale(1.1);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #ffeb3b);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.05); /* Subtle translucent card effect */
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(255, 255, 0, 0.3); /* Batman yellow shadow */
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  background-color: #f8c42d; /* Batman yellow */
+  color: #121212;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffeb3b;
+  box-shadow: 0px 0px 15px #f8c42d;
+}
